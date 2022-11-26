@@ -4,23 +4,77 @@
 }
 
 body{
+    overflow: hidden;
     font-family: calibri;
     background: url(https://raw.githubusercontent.com/WineDevs/Wine-Launcher-Site/main/static/images/background.png);
 
 }
 
 
+.header{
+    justify-content: center;
+    display: flex;
+    padding:20px 10px;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #161616;
+}
+
+.header>ul>li{ 
+    transition: .3s;
+    cursor: pointer;
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header>ul{
+    justify-content: space-around;
+    align-self: center;
+    display: flex;
+    list-style-type: none;
+}
+
+
+
+.header>ul>li>i{
+    margin-right: 5px;
+}
+
+.fa-discord{
+    color: #506ff8;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 4px;
+    border-radius: 25%;
+}
+
+.fa-github{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 5px 6px;
+    border-radius: 25%;;  
+}
+
+.header>ul>li:hover{
+    font-size: 20px;
+    transition: .2s;
+    color :rgb(226, 84, 84);
+}
 
 .wrapper{
     align-self: center;
     margin-top: 50px;
-   display: flex;
-   justify-content: center;
+    display: flex;
+    justify-content: center;
 }
+
 
 .wrapper>img{
     width: 90px;
+
 }
+
+
 .disp{
     
     margin-left: 25px;
@@ -36,7 +90,7 @@ body{
 
 .disp>h4{
     font-weight: 400;
-    font-size: 30px;
+    font-size: 20px;
     display: block;
     color: #fff;
 }
@@ -48,7 +102,7 @@ body{
     text-decoration: none;
     background-color: rgb(90, 90, 90);
     padding: 7px 15px;
-    transition: .3s;
+    transition: 1s;
     border-radius: 5px;
 }
 
@@ -69,7 +123,91 @@ body{
     justify-content: center;
 }
 
-@keyframes body {
-    
+.download-block{
+    align-self: center;
+    justify-content: space-around;
+    display: flex;
+    padding: 10px;
+    background-color: rgb(226, 84, 84);
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 10px;
 }
 
+.download-block>a{
+    border:2px solid #000;
+    transition: .3s;
+    border-radius: 7px;
+    padding: 5px 7px;
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.download-block>span{
+    align-self: center;
+    border-radius: 7px;
+    padding: 5px 7px;
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+}
+
+.download-block>a:hover{
+    transition: .2s;
+    background-color: white;
+    border:2px solid black;
+    color: #000;
+}
+
+.footer{
+    background-color: #ee8282;
+
+}
+
+.footer{
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    font-weight: 600;
+}
+
+.footer>ul>li{
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer>ul>li>a{
+    transition: .3s;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer>ul>li>a:hover{
+    transition: .2s;
+    color: #e44a4a;
+    font-size: 18px;
+}
+
+.footer>ul{
+    justify-content: center;
+    display: flex;
+    list-style-type: none;
+}
+
+@media (min-width: 380px) {
+    .download-block{
+        width: 60%;
+    }
+}
+
+@media (min-width:900px) {
+    .download-block{
+        width: 30%;
+    }
+}
