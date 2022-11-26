@@ -1,0 +1,36 @@
+@media (max-width:480px){
+    .but>a{
+        font-size: 15px;
+    }
+    
+    .wrapper>img{
+        width: 60px;
+    }
+    
+    .disp>h2{
+        font-style: 25px;
+    }
+    
+    .disp>h4{
+        font-size: 15px;
+    }
+} 
+
+@media (max-width:320px){
+    .but>a{
+        font-size: 7px;
+    }
+    
+    .wrapper>img{
+        width: 40px;
+    }
+    
+    .disp>h2{
+        font-style: 15px;
+    }
+    
+    .disp>h4{
+        font-size: 15px;
+    }
+} 
+
